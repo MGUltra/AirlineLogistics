@@ -14,11 +14,11 @@ private:
 	std::string cityName;
 	std::string countryName;
 
-	 longitude;
-	 latitude;
+	float longitude;
+	float latitude;
 
 	int latDegrees, latMinutes, latSeconds;
-	char latDirection // N or S
+	char latDirection; // N or S
 
 
 	int longDegrees, longMinutes, longSeconds;
@@ -38,8 +38,8 @@ public:
 	void setAirportName(std::string);
 	void setCityName(std::string);
 	void setCountryName(std::string);
-	void setLongitude();
-	void setLatitude();
+	void setLongitude(float);
+	void setLatitude(float);
 	void setLatDegrees(int);
 	void setLatMinutes(int);
 	void setLatSeconds(int);
@@ -65,6 +65,6 @@ public:
 	char getLatDirection();
 	char getLongDirection();
 	int getAltitude();
-}
+};
 
 #endif
