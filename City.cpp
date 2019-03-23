@@ -23,76 +23,79 @@ City::~City()
 /*******************************************************
 *                     SET FUNCTIONS
 ********************************************************/
-
-
-void City::setAirportName(std::string)
+void City::setICAO(std::string stringIn)
 {
-
+	this->ICAO = stringIn;
 }
 
-void City::setCityName(std::string)
+void City::setAirportName(std::string stringIn)
 {
-
+	this->airportName = stringIn;
 }
 
-void City::setCountryName(std::string)
+void City::setCityName(std::string stringIn)
 {
-
+	this->cityName = stringIn;
 }
 
-void City::setLongitude(float)
+void City::setCountryName(std::string stringIn)
 {
-
+	this->countryName = stringIn;
 }
 
-void City::setLatitude(float)
+void City::setLongitude(float floatIn)
 {
-
+	this->longitude = floatIn;
 }
 
-void City::setLatDegrees(int)
+void City::setLatitude(float floatIn)
 {
-
+	this->latitude = floatIn;
 }
 
-void City::setLatMinutes(int)
+void City::setLatDegrees(int intIn)
 {
-
+	this->latDegrees = intIn;
 }
 
-void City::setLatSeconds(int)
+void City::setLatMinutes(int intIn)
 {
-
+	this->latMinutes = intIn;
 }
 
-void City::setLongDegrees(int)
+void City::setLatSeconds(int intIn)
 {
-
+	this->latSeconds = intIn;
 }
 
-void City::setLongMinutes(int)
+void City::setLongDegrees(int intIn)
 {
-
+	this->longSeconds = intIn;
 }
 
-void City::setLongSeconds(int)
+void City::setLongMinutes(int intIn)
 {
-
+	this->longSeconds = intIn;
 }
 
-void City::setLatDirection(char)
+void City::setLongSeconds(int intIn)
 {
-
+	this->longSeconds = intIn;
 }
 
-void City::setLongDirection(char)
+void City::setLatDirection(char charIn)
 {
-
+	this->latDirection = charIn;
 }
 
-void City::setAltitude(int)
+void City::setLongDirection(char charIn)
 {
+	this->longDirection = charIn;
+}
 
+void City::setAltitude(int intIn)
+{
+	this->altitude = intIn;
 }
 
 
@@ -100,6 +103,10 @@ void City::setAltitude(int)
 *                     GET FUNCTIONS
 ********************************************************/
 
+std::string City::getICAO()
+{
+	return this->ICAO;
+}
 
 std::string City::getAirportName()
 {
