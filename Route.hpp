@@ -1,6 +1,6 @@
 
-#ifndef ROUTES_HPP
-#define ROUTES_HPP
+#ifndef ROUTE_HPP
+#define ROUTE_HPP
 
 #include <iostream>
 #include <string>
@@ -9,11 +9,14 @@
 
 #include "Airport.hpp"
 
-class Routes
+class Route
 {
 private:
+	Airport* origin;
+	Airport* destination;
 
-	std::map<std::string, Airport*> airports;
+	int distance;
+
 
 public:
 
