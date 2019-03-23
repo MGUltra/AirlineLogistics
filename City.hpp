@@ -24,7 +24,7 @@ private:
 
 	int longDegrees, longMinutes, longSeconds;
 	char longDirection; // E or W
-	
+
 	int altitude;
 
 
@@ -34,6 +34,7 @@ public:
 	~City();
 
 	// Set Functions
+	void setICAO(std::string);
 	void setAirportName(std::string);
 	void setCityName(std::string);
 	void setCountryName(std::string);
@@ -50,6 +51,7 @@ public:
 	void setAltitude(int);
 
 	// Get Functions
+	std::string getICAO();
 	std::string getAirportName();
 	std::string getCityName();
 	std::string getCountryName();
