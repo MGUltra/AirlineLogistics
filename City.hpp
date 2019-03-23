@@ -10,6 +10,7 @@ class City
 {
 private:
 
+	std::string ICAO;
 	std::string airportName;
 	std::string cityName;
 	std::string countryName;
@@ -23,9 +24,7 @@ private:
 
 	int longDegrees, longMinutes, longSeconds;
 	char longDirection; // E or W
-
-
-
+	
 	int altitude;
 
 
