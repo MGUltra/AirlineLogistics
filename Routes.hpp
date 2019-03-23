@@ -4,14 +4,21 @@
 
 #include <iostream>
 #include <string>
+#include <map>
 
-#include "City.hpp"
 
-Class Routes
+#include "Airport.hpp"
+
+class Routes
 {
 private:
 
+	std::map<std::string, Airport*> airports;
+
 public:
+
+
+
 };
 
 #endif
