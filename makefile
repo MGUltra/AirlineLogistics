@@ -7,9 +7,9 @@ CXXFLAGS += -pedantic
 CXXFLAGS += -Wextra
 CXXFLAGS += -Weffc++
 
-ROUTEOBJECTS = City.o Routes.o
-ROUTESRCS = City.cpp Routes.cpp
-ROUTEHEADERS = City.hpp Routes.hpp
+ROUTEOBJECTS = Airport.o Routes.o
+ROUTESRCS = Airport.cpp Routes.cpp
+ROUTEHEADERS = Airport.hpp Routes.hpp
 
 
 all: 

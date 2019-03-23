@@ -1,12 +1,12 @@
 
 
-#ifndef CITY_HPP
-#define CITY_HPP
+#ifndef AIRPORT_HPP
+#define AIRPORT_HPP
 
 #include <iostream>
 #include <string>
 
-class City
+class Airport
 {
 private:
 
@@ -30,8 +30,8 @@ private:
 
 public:
 	
-	City();
-	~City();
+	Airport();
+	~Airport();
 
 	// Set Functions
 	void setICAO(std::string);

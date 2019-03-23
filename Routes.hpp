@@ -7,13 +7,13 @@
 #include <map>
 
 
-#include "City.hpp"
+#include "Airport.hpp"
 
 class Routes
 {
 private:
 
-	std::map<std::string, City*> airports;
+	std::map<std::string, Airport*> airports;
 
 public:
 

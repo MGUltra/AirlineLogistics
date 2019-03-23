@@ -4,12 +4,12 @@
 #include <iostream>
 #include <string>
 
-#include "City.hpp"
+#include "Airport.hpp"
 #include "Routes.hpp"
 
 int main()
 {
-	City* newcity = new City;
+	Airport* newcity = new Airport;
 
 	delete newcity;
 
