@@ -7,7 +7,7 @@
 
 #include "City.hpp"
 
-Class Routes
+class Routes
 {
 private:
 
