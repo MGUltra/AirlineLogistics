@@ -7,20 +7,24 @@ CXXFLAGS += -pedantic
 CXXFLAGS += -Wextra
 CXXFLAGS += -Weffc++
 
+GTESTFLAGS = -lgtest
+GTESTFLAGS += -lgtest_main
+GTESTFLAGS += -pthread
+
 ROUTEOBJECTS = Airport.o Route.o
 ROUTESRCS = Airport.cpp Route.cpp
 ROUTEHEADERS = Airport.hpp Route.hpp
 
 
-all: routetest
+all: 
 
 clean:
-	-rm ${ROUTEOBJECTS} routetest main.o
+	-rm ${ROUTEOBJECTS} routetest test.o
 
-routetest: ${ROUTEOBJECTS} ${ROUTEHEADERS}
-	${CXX} -g main.cpp ${ROUTEOBJECTS} -o routetest
+test: ${ROUTEOBJECTS} ${ROUTEHEADERS}
+	${CXX} -g test.cpp ${GTESTFLAGS} ${ROUTEOBJECTS} -o routetest
 
 
 
 ${ROUTEOBJECTS}: ${ROUTESRCS}
-	${CXX} ${CXXFLAGS} -c $(@:.o=.cpp)
+	${CXX} ${GTESTFLAGS} ${CXXFLAGS} -c $(@:.o=.cpp)
