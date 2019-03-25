@@ -16,6 +16,7 @@ private:
 	Airport* origin;
 	Airport* destination;
 	double distance;
+	const double EarthRadiusKm = 6372.8;
 
 public:
 
@@ -27,9 +28,10 @@ public:
 	~Route();
 
 	// Copy Constructor
+	Route(const Route &sourceRoute);
 
 	// Assignment Operator
-
+	Route& operator=(const Route &sourceRoute);
 
 	// Set Functions
 
@@ -42,12 +44,13 @@ public:
 	Airport* getOrigin();
 	Airport* getDestination();
 	double getDistance();
+	double getEarthRadiusKm();
 
 	// Other Functions
 
-	int calculateRouteDistance(Airport*, Airport*);
+	double calculateRouteDistance(Airport*, Airport*);
 
-	double degreeToRadian(double, double);
+	double degreeToRadian(double);
 
 };
 

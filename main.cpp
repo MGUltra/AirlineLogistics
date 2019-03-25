@@ -17,5 +17,7 @@ int main()
 
 	delete newRoute;
 
+	std::cout << newRoute->getEarthRadiusKm() << std::endl;
+
 	return 0;
 }

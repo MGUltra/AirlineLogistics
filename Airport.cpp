@@ -6,6 +6,21 @@
 *                     CONSTRUCTOR
 ********************************************************/
 Airport::Airport()
+	: ICAO()
+	, airportName()
+	, cityName()
+	, countryName()
+	, longitude()
+	, latitude()
+	, latDegrees()
+	, latMinutes()
+	, latSeconds()
+	, latDirection() // N or S
+	, longDegrees()
+	, longMinutes()
+	, longSeconds()
+	, longDirection() // E or W
+	, altitude()
 {
 
 }
@@ -25,22 +40,23 @@ Airport::Airport(std::string ICAOIn,
                  char latDirIn,
                  char longDirIn,
                  int altitudeIn)
+	: ICAO(ICAOIn)
+	, airportName(airportNameIn)
+	, cityName(cityNameIn)
+	, countryName(countryNameIn)
+	, longitude(longitudeIn)
+	, latitude(latitudeIn)
+	, latDegrees(latDegIn)
+	, latMinutes(latMinIn)
+	, latSeconds(latSecIn)
+	, latDirection(latDirIn) // N or S
+	, longDegrees(longDegIn)
+	, longMinutes(longMinIn)
+	, longSeconds(longSecIn)
+	, longDirection(longDirIn) // E or W
+	, altitude(altitudeIn)	
 {
-	setICAO(ICAOIn);
-	setAirportName(airportNameIn);
-	setCityName(cityNameIn);
-	setCountryName(countryNameIn);
-	setLongitude(longitudeIn);
-	setLatitude(latitudeIn);
-	setLatDegrees(latDegIn);
-	setLatMinutes(latMinIn);
-	setLatSeconds(latSecIn);
-	setLongDegrees(longDegIn);
-	setLongMinutes(longMinIn);
-	setLongSeconds(longSecIn);
-	setLatDirection(latDirIn);
-	setLongDirection(longDirIn);
-	setAltitude(altitudeIn);
+
 }
 
 /*******************************************************
