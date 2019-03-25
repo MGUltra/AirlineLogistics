@@ -30,8 +30,17 @@ private:
 
 public:
 	
+	// Constructors
 	Airport();
+	Airport(std::string, std::string, std::string, std::string,
+			float, float, int, int, int, int, int, int, char, char, int);
+
+	// Destructor
 	~Airport();
+
+	// Copy Constructor
+
+	// Assignment Operator
 
 	// Set Functions
 	void setICAO(std::string);
