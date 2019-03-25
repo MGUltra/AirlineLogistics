@@ -15,8 +15,8 @@ private:
 	std::string cityName;
 	std::string countryName;
 
-	float longitude;
-	float latitude;
+	double longitude;
+	double latitude;
 
 	int latDegrees, latMinutes, latSeconds;
 	char latDirection; // N or S
@@ -33,7 +33,7 @@ public:
 	// Constructors
 	Airport();
 	Airport(std::string, std::string, std::string, std::string,
-			float, float, int, int, int, int, int, int, char, char, int);
+			double, double, int, int, int, int, int, int, char, char, int);
 
 	// Destructor
 	~Airport();
@@ -47,8 +47,8 @@ public:
 	void setAirportName(std::string);
 	void setCityName(std::string);
 	void setCountryName(std::string);
-	void setLongitude(float);
-	void setLatitude(float);
+	void setLongitude(double);
+	void setLatitude(double);
 	void setLatDegrees(int);
 	void setLatMinutes(int);
 	void setLatSeconds(int);
@@ -64,8 +64,8 @@ public:
 	std::string getAirportName();
 	std::string getCityName();
 	std::string getCountryName();
-	float getLongitude();
-	float getLatitude();
+	double getLongitude();
+	double getLatitude();
 	int getLatDegrees();
 	int getLatMinutes();
 	int getLatSeconds();

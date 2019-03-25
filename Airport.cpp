@@ -14,8 +14,8 @@ Airport::Airport(std::string ICAOIn,
                  std::string airportNameIn,
                  std::string cityNameIn,
                  std::string countryNameIn,
-                 float longitudeIn,
-                 float latitudeIn,
+                 double longitudeIn,
+                 double latitudeIn,
                  int latDegIn,
                  int latMinIn,
                  int latSecIn,
@@ -76,12 +76,12 @@ void Airport::setCountryName(std::string stringIn)
 	this->countryName = stringIn;
 }
 
-void Airport::setLongitude(float floatIn)
+void Airport::setLongitude(double floatIn)
 {
 	this->longitude = floatIn;
 }
 
-void Airport::setLatitude(float floatIn)
+void Airport::setLatitude(double floatIn)
 {
 	this->latitude = floatIn;
 }
@@ -159,13 +159,13 @@ std::string Airport::getCountryName()
 }
 
 
-float Airport::getLongitude()
+double Airport::getLongitude()
 {
 	return this->longitude;
 }
 
 
-float Airport::getLatitude()
+double Airport::getLatitude()
 {
 	return this->latitude;
 }

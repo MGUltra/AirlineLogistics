@@ -15,7 +15,7 @@ class Route
 private:
 	Airport* origin;
 	Airport* destination;
-	int distance;
+	double distance;
 
 public:
 
@@ -35,19 +35,19 @@ public:
 
 	void setOrigin(Airport*);
 	void setDestination(Airport*);
-	void setDistance(int);
+	void setDistance(double);
 
 	// Get Functions
 
 	Airport* getOrigin();
 	Airport* getDestination();
-	int getDistance();
+	double getDistance();
 
 	// Other Functions
 
 	int calculateRouteDistance(Airport*, Airport*);
 
-	double degreeToRadian();
+	double degreeToRadian(double, double);
 
 };
 
