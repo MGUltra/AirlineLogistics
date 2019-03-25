@@ -47,6 +47,8 @@ public:
 
 	int calculateRouteDistance(Airport*, Airport*);
 
+	double degreeToRadian();
+
 };
 
 #endif
