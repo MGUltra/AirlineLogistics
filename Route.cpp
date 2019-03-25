@@ -53,7 +53,6 @@ Route& Route::operator=(const Route &sourceRoute)
 }
 
 
-
 /*******************************************************
 *                     SET FUNCTIONS
 ********************************************************/
@@ -72,8 +71,6 @@ void Route::setDistance(double distanceIn)
 {
 	this->distance = distanceIn;
 }
-
-
 
 
 /*******************************************************

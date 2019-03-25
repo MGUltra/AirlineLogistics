@@ -34,22 +34,18 @@ public:
 	Route& operator=(const Route &sourceRoute);
 
 	// Set Functions
-
 	void setOrigin(Airport*);
 	void setDestination(Airport*);
 	void setDistance(double);
 
 	// Get Functions
-
 	Airport* getOrigin();
 	Airport* getDestination();
 	double getDistance();
 	double getEarthRadiusKm();
 
 	// Other Functions
-
 	double calculateRouteDistance(Airport*, Airport*);
-
 	double degreeToRadian(double);
 
 };
