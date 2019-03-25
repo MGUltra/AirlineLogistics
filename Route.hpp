@@ -5,6 +5,7 @@
 #include <iostream>
 #include <string>
 #include <map>
+#include <cmath>
 
 
 #include "Airport.hpp"
@@ -14,7 +15,8 @@ class Route
 private:
 	Airport* origin;
 	Airport* destination;
-	int distance;
+	double distance;
+	const double EarthRadiusKm = 6372.8;
 
 public:
 
@@ -26,25 +28,25 @@ public:
 	~Route();
 
 	// Copy Constructor
+	Route(const Route &sourceRoute);
 
 	// Assignment Operator
-
+	Route& operator=(const Route &sourceRoute);
 
 	// Set Functions
-
 	void setOrigin(Airport*);
 	void setDestination(Airport*);
-	void setDistance(int);
+	void setDistance(double);
 
 	// Get Functions
-
 	Airport* getOrigin();
 	Airport* getDestination();
-	int getDistance();
+	double getDistance();
+	double getEarthRadiusKm();
 
 	// Other Functions
-
-	int calculateRouteDistance(Airport*, Airport*);
+	double calculateRouteDistance(Airport*, Airport*);
+	double degreeToRadian(double);
 
 };
 
