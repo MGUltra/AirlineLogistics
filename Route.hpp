@@ -17,8 +17,18 @@ private:
 	int distance;
 
 public:
+
+	// Constructors
 	Route();
+	Route(Airport*, Airport*);
+
+	// Destructors
 	~Route();
+
+	// Copy Constructor
+
+	// Assignment Operator
+
 
 	// Set Functions
 
@@ -30,9 +40,11 @@ public:
 
 	Airport* getOrigin();
 	Airport* getDestination();
-	
 	int getDistance();
 
+	// Other Functions
+
+	int calculateRouteDistance(Airport*, Airport*);
 
 };
 

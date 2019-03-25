@@ -10,6 +10,39 @@ Airport::Airport()
 
 }
 
+Airport::Airport(std::string ICAOIn,
+                 std::string airportNameIn,
+                 std::string cityNameIn,
+                 std::string countryNameIn,
+                 float longitudeIn,
+                 float latitudeIn,
+                 int latDegIn,
+                 int latMinIn,
+                 int latSecIn,
+                 int longDegIn,
+                 int longMinIn,
+                 int longSecIn,
+                 char latDirIn,
+                 char longDirIn,
+                 int altitudeIn)
+{
+	setICAO(ICAOIn);
+	setAirportName(airportNameIn);
+	setCityName(cityNameIn);
+	setCountryName(countryNameIn);
+	setLongitude(longitudeIn);
+	setLatitude(latitudeIn);
+	setLatDegrees(latDegIn);
+	setLatMinutes(latMinIn);
+	setLatSeconds(latSecIn);
+	setLongDegrees(longDegIn);
+	setLongMinutes(longMinIn);
+	setLongSeconds(longSecIn);
+	setLatDirection(latDirIn);
+	setLongDirection(longDirIn);
+	setAltitude(altitudeIn);
+}
+
 /*******************************************************
 *                     DESTRUCTOR
 ********************************************************/

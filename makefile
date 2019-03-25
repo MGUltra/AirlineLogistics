@@ -12,7 +12,7 @@ ROUTESRCS = Airport.cpp Route.cpp
 ROUTEHEADERS = Airport.hpp Route.hpp
 
 
-all: 
+all: routetest
 
 clean:
 	-rm ${ROUTEOBJECTS} routetest main.o
