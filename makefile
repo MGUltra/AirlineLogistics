@@ -18,13 +18,16 @@ ROUTEHEADERS = Airport.hpp Route.hpp
 
 all: 
 
+test: routetest airporttest
+
 clean:
-	-rm ${ROUTEOBJECTS} routetest test.o
+	-rm ${ROUTEOBJECTS} routetest airporttest
 
-test: ${ROUTEOBJECTS} ${ROUTEHEADERS}
-	${CXX} -g test.cpp ${GTESTFLAGS} ${ROUTEOBJECTS} -o routetest
+routetest: ${ROUTEOBJECTS} ${ROUTEHEADERS}
+	${CXX} -g routeTest.cpp ${GTESTFLAGS} ${ROUTEOBJECTS} -o routetest
 
-
+airporttest: ${ROUTEOBJECTS} ${ROUTEHEADERS}
+	${CXX} -g airportTest.cpp ${GTESTFLAGS} ${ROUTEOBJECTS} -o airporttest
 
 ${ROUTEOBJECTS}: ${ROUTESRCS}
 	${CXX} ${GTESTFLAGS} ${CXXFLAGS} -c $(@:.o=.cpp)
