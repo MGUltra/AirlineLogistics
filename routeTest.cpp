@@ -1,13 +1,11 @@
-
-
-
 #include <iostream>
 #include <string>
+#include <gtest/gtest.h>
 
 #include "Airport.hpp"
 #include "Route.hpp"
 
-int main()
+int main(int argc, char **argv)
 {
 	Airport* newcity = new Airport;
 
@@ -19,5 +17,7 @@ int main()
 
 	std::cout << newRoute->getEarthRadiusKm() << std::endl;
 
-	return 0;
+	testing::InitGoogleTest(&argc, argv);
+
+	return RUN_ALL_TESTS();
 }
